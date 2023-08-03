@@ -1,0 +1,41 @@
+#galaxy_info:
+  author: wlucchese
+  description: devops
+  company: Peraton
+
+  # If the issue tracker for your role is not on github, uncomment the
+  # next line and provide a value
+  # issue_tracker_url: http://example.com/issue/tracker
+
+  license: license (GPL-2.0-or-later, MIT, etc)
+
+  # RHEL: 9.2
+  # min_ansible_version: 2.1
+  # ansible: core 2.14.2
+  #  python version: 3.11.2 (Red Hat 11.3.1-4)] (/usr/bin/python3.11)
+  #  jinja version: 3.1.2
+
+  # virsh version: 9.0.0
+  # Python3: 3.9.16
+  # Added this to ansible_python_interpreter: /usr/bin/python3  # Add this line; adjust the path as necessary
+
+ 
+  galaxy_tags: 
+    #ansible-galaxy collection list
+    #checks which collections are in ansible
+    # ansible-galaxy role init kvm_provision
+    # Role kvm_provision was created successfully
+
+    # List tags for your role here, one per line. A tag is a keyword that describes
+    # and categorizes the role. Users find roles by searching for tags. Be sure to
+    # remove the '[]' above, if you add tags to this list.
+    #
+    # NOTE: A tag is limited to a single word comprised of alphanumeric characters.
+    #       Maximum 20 tags per role.
+
+# dependencies: 
+ #  - libguestfs-tools
+ #  - python3-libvirt
+   
+  # List your role dependencies here, one per line. Be sure to remove the '[]' above,
+  # if you add dependencies to this list.
