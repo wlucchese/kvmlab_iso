@@ -15,6 +15,11 @@
       <target dev='hda' bus='ide'/>
       <readonly/>
     </disk>
+    <disk type='file' device='disk'>
+      <driver name='qemu' type='qcow2'/>
+      <source file='{{ libvirt_pool_dir }}/{{ vm_name }}.qcow2'/>
+      <target dev='vda' bus='virtio'/>
+    </disk>
     <interface type='network'>
       <source network='{{ vm_net }}'/>
       <model type='virtio'/>
