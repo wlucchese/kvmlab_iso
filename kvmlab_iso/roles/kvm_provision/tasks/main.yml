@@ -8,6 +8,11 @@
       - python3-libvirt
     state: present
 
+- name: Create VM disk
+  command: qemu-img create -f qcow2 {{ libvirt_pool_dir }}/{{ vm_name }}.qcow2 {{ vm_disk_size_gb }}G
+  args:
+    creates: "{{ libvirt_pool_dir }}/{{ vm_name }}.qcow2"
+
 - name: Get VMs list
   community.libvirt.virt:
     command: list_vms
