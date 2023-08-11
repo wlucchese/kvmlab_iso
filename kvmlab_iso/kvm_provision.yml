@@ -14,6 +14,7 @@
     net: default
     ssh_pub_key: "/home/wlucchese/.ssh/id_rsa.pub" #change path to ssh key storage
 #Connect to the VM by using your IP address and SSH key: ssh -i ~/.ssh/id_rsa root@192.168.xxx.xxx
+    disk_size_gb: 20
 
   tasks:
     - name: KVM Provision role
@@ -27,3 +28,4 @@
         vm_net: "{{ net }}"
         cleanup_tmp: "{{ cleanup }}"
         ssh_key: "{{ ssh_pub_key }}"
+        vm_disk_size_gb: "{{ disk_size_gb }}"
